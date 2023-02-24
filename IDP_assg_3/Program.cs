@@ -44,6 +44,14 @@
             {
                 if (elements[i].type == "Metall") System.Console.WriteLine("\t"+elements[i].name);
             }
+
+            //skriver ut namnet på alla grundämnen med smältpunkt under 273.16 K och kokpunkt över 273.16 K
+            System.Console.WriteLine("\nAlla grundämnen med smältpunkt under 273.16 K och kokpunkt över 273.16 K:");
+            for (int i = 0; i < elements.Length; i++)
+            {
+                if (elements[i].meltingPoint < 273.16 && elements[i].boilingPoint > 273.16)
+                    System.Console.WriteLine("\t" + elements[i].name);
+            }
         }
     }
 }
