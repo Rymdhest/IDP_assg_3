@@ -24,17 +24,18 @@
             Element iron = new Element() { name = "Järn", z = 26, type = "Metall", meltingPoint = 1811, boilingPoint = 3134 };
             Element gold = new Element() { name = "Guld", z = 79, type = "Metall", meltingPoint = 1337.33, boilingPoint = 3243 };
 
-            oxygien.print();
-            iron.print();
-            gold.print();
-
             Element[] elements = new Element[6];
             elements[0] = oxygien;
             elements[1] = iron;
             elements[2] = gold;
             elements[3] = new Element() { name = "Väte", z = 1, type = "Ickemetall", meltingPoint = 13.99, boilingPoint = 20.271 };
-            elements[3] = new Element() { name = "Brom", z = 35, type = "Ickemetall", meltingPoint = 265.8, boilingPoint = 332.0 };
-            elements[3] = new Element() { name = "Kvicksilver", z = 80, type = "Metall", meltingPoint = 234.3210, boilingPoint = 629.88 };
+            elements[4] = new Element() { name = "Brom", z = 35, type = "Ickemetall", meltingPoint = 265.8, boilingPoint = 332.0 };
+            elements[5] = new Element() { name = "Kvicksilver", z = 80, type = "Metall", meltingPoint = 234.3210, boilingPoint = 629.88 };
+
+            for (int i = 0; i < elements.Length; i++ )
+            {
+                elements[i].print();
+            }
         }
     }
 }
