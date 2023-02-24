@@ -32,9 +32,17 @@
             elements[4] = new Element() { name = "Brom", z = 35, type = "Ickemetall", meltingPoint = 265.8, boilingPoint = 332.0 };
             elements[5] = new Element() { name = "Kvicksilver", z = 80, type = "Metall", meltingPoint = 234.3210, boilingPoint = 629.88 };
 
+            //Skriver ut detaljerad information om alla grundämnen
             for (int i = 0; i < elements.Length; i++ )
             {
                 elements[i].print();
+            }
+
+            //skriver ut namnet på alla metaller
+            System.Console.WriteLine("Alla grundämnen som är metaller:");
+            for (int i = 0; i < elements.Length; i++)
+            {
+                if (elements[i].type == "Metall") System.Console.WriteLine("\t"+elements[i].name);
             }
         }
     }
